@@ -7,8 +7,10 @@ Based of original module: https://github.com/avinor/terraform-azurerm-vpn
 
 It supports creating:
 
+- Public IP
 - Network Gateway
 - Network Gateway Connection
+- Diagnostic Logging
 
 
 ## Usage Examples
