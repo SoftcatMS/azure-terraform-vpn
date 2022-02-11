@@ -1,5 +1,5 @@
 module "simple" {
-  source = "github.com/SoftcatMS/azure-terraform-vpn/"
+  source = "git@github.com:SoftcatMS/azure-terraform-vpn"
 
   name                = "vpn-example-advanced"
   resource_group_name = azurerm_resource_group.rg-vpn-example-advanced.name
