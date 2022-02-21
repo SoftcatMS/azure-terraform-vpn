@@ -1,4 +1,4 @@
-# azure-terraform-vpn
+# terraform-azure-vpn
 
 Deployes a virtual network gateway in Azure as Vpn, does not support Expressroute setup.
 VPN can be configured in active-active mode with optional point-to-site configuration activated.
