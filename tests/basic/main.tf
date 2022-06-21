@@ -26,6 +26,7 @@ module "simple" {
   resource_group_name  = azurerm_resource_group.rg-vpn-test-basic.name
   location             = azurerm_resource_group.rg-vpn-test-basic.location
   virtual_network_name = module.vnet.vnet_name
+  gw_subnet_name       = "GatewaySubnet"
   vpn_gateway_name     = "vpn-test-basic-gw01"
   gateway_type         = "Vpn"
 
@@ -45,6 +46,8 @@ module "simple" {
     environment = "test"
     engineer    = "ci/cd"
   }
+
+  depends_on = [module.vnet]
 
 
 }

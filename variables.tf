@@ -14,8 +14,8 @@ variable "virtual_network_name" {
   default     = ""
 }
 
-variable "subnet_name" {
-  description = "The name of the subnet to use in VM scale set"
+variable "gw_subnet_name" {
+  description = "The name of the Gateway subnet"
   default     = ""
 }
 
