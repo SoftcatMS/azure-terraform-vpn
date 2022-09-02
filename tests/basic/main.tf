@@ -27,7 +27,7 @@ module "simple" {
   resource_group_name = azurerm_resource_group.rg-vpn-test-basic.name
   location            = azurerm_resource_group.rg-vpn-test-basic.location
   subnet_id           = module.vnet.vnet_subnets[0]
-  sku                 = "Basic"
+  sku                 = "VpnGw1AZ"
 
   tags = {
     environment = "test"
