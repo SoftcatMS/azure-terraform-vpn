@@ -12,6 +12,7 @@ resource "azurerm_public_ip" "gw" {
   allocation_method = "Static"
   domain_name_label = format("%sgw%s", lower(replace(var.name, "/[[:^alnum:]]/", "")), random_string.dns.result)
   sku               = "Standard"
+  zones             = var.zones
 
   tags = var.tags
 }
@@ -64,6 +65,7 @@ resource "azurerm_public_ip" "gw_aa" {
   allocation_method = "Static"
   domain_name_label = format("%sgwaa%s", lower(replace(var.name, "/[[:^alnum:]]/", "")), random_string.dns.result)
   sku               = "Standard"
+  zones             = var.zones
 
   tags = var.tags
 }
