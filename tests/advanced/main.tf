@@ -28,6 +28,7 @@ module "simple" {
   location            = azurerm_resource_group.rg-vpn-test-advanced.location
   subnet_id           = module.vnet.vnet_subnets[1]
   sku                 = "VpnGw1AZ"
+  zones               = ["1", "2", "3"]
 
   tags = {
     environment = "test"

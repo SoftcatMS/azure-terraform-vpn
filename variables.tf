@@ -47,6 +47,12 @@ variable "log_analytics_workspace_id" {
   default     = null
 }
 
+variable "zones" {
+  description = "A collection containing the availability zone to allocate the Public IP in"
+  type        = list(any)
+  default     = ["1", "2", "3"]
+}
+
 variable "tags" {
   description = "Tags to apply to all resources created."
   type        = map(string)
